@@ -185,6 +185,20 @@ button:hover {
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.7);
 }
 
+/* Rodapé de créditos */
+.credits {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #444;
+    margin-top: 20px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+.credits:hover {
+    color: #888;
+}
+
 /* Efeito de terminal (text blink) */
 @keyframes blink {
     0%, 100% { opacity: 1; }
@@ -221,5 +235,9 @@ button:hover {
     
     .message {
         font-size: 1rem;
+    }
+    
+    .credits {
+        font-size: 0.6rem;
     }
 } 
