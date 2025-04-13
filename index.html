@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Terminal de Segurança</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="led"></div>
+                <h1>TERMINAL DE SEGURANÇA</h1>
+            </div>
+            <div class="terminal-screen">
+                <div class="screen-output" id="screen-output">
+                    <p>> Insira o código de acesso</p>
+                    <p>> Formato requerido: 4 letras + 4 números</p>
+                </div>
+                <div class="input-line">
+                    <span class="prompt">> </span>
+                    <input type="text" id="password-input" maxlength="8" placeholder="XXXX0000" autocomplete="off">
+                </div>
+                <div class="button-container">
+                    <button id="unlock-btn">DESTRAVAR COFRE</button>
+                </div>
+                <div class="message" id="result-message"></div>
+                <div class="secret-document" id="secret-document">
+                    <h3>DOCUMENTO CONFIDENCIAL</h3>
+                    <p>O mandante não digitou nada... mas deixou tudo configurado. O acesso privilegiado começou em sua mesa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Registrar Service Worker para PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('Service Worker registrado'))
+                .catch(err => console.log('Erro ao registrar Service Worker', err));
+        }
+    </script>
+</body>
+</html> 
