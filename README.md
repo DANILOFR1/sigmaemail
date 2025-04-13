@@ -14,6 +14,7 @@ Este aplicativo web simula um terminal de segurança onde o usuário precisa ins
 - Limite de 10 tentativas para acertar a senha
 - Exibição de mensagem personalizada com base na entrada
 - Revelação de conteúdo oculto quando a senha correta é inserida
+- Disponibilização de um documento PDF para download quando a senha for correta
 - Sistema de falha catastrófica (explosão do cofre) quando as tentativas se esgotam
 - Funcionalidade offline completa (PWA)
 
@@ -27,6 +28,7 @@ Este aplicativo web simula um terminal de segurança onde o usuário precisa ins
    - script.js
    - service-worker.js
    - manifest.json
+   - Dossie_SIGMA_Cofre_MB_Indireto.pdf
    - README.md
    - Adicione os ícones necessários (icon-192.png e icon-512.png)
 
@@ -59,4 +61,5 @@ Depois acesse `http://localhost:8000` ou `http://localhost:5000` em seu navegado
 - Para que o PWA funcione corretamente, você precisará criar os ícones mencionados no manifesto.
 - A senha correta é: ZRMA2037 (case insensitive)
 - O usuário tem 10 tentativas para acertar a senha, caso contrário, o cofre "explode" e o jogo termina.
-- O aplicativo força o formato correto de senha enquanto o usuário digita. 
+- O aplicativo força o formato correto de senha enquanto o usuário digita.
+- Quando o usuário acerta a senha, ele pode baixar o arquivo PDF confidencial. 

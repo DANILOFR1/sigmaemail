@@ -6,7 +6,8 @@ const urlsToCache = [
   '/script.js',
   '/manifest.json',
   '/icon-192.png',
-  '/icon-512.png'
+  '/icon-512.png',
+  '/Dossie_SIGMA_Cofre_MB_Indireto.pdf'
 ];
 
 // Instalação do Service Worker
